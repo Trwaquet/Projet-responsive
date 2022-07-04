@@ -56,7 +56,8 @@ nav li {
 }
 
 li a:hover {
-    color: #0D88CD;
+    color: #6dc9ff;
+    transition-duration: 0.5s;
 }
 
 .connexionButton {
@@ -87,9 +88,14 @@ li a:hover {
 
 /* ############# Fin header ############# */
 
+
+
+
+
+
 /* ############# Début article ############# */
 
-#container {
+/* #info {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
@@ -163,6 +169,7 @@ li a:hover {
 
 .imgZoom:hover img{
     transform: scale(0.95);
+    transition-duration: 0.5s;
 }
 
 .iconsArticle {
@@ -173,9 +180,27 @@ li a:hover {
 
 .iconsArticle:hover {
     transform: scale(1.1);
+} */
+
+.info img {
+
 }
 
+.iconsArticle {
+    width: 10%;
+    height: auto;
+    margin-right: 25px;
+}
+
+
 /* ############# Fin article ############# */
+
+
+
+
+
+
+
 
 /* ############# Début formulaire ############# */
 
