@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./public/assets/img/laptop-screen.png">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/7194bdd5cb.js" crossorigin="anonymous"></script>
+    <title>Bourse High-Tech</title>
+</head>
+<body>
+
+    <header>
+        
+<!-- ########## Image du logo en blanc au format .svg ########## -->
+
+        <a href="https://lamanu.fr/" target="_blank"><img src="./public/assets/img/LaManuUltraCompact_RVB_white.svg" alt="Logo" class="logo"></a>
+
+<!-- ########## Barre de navigatio ########## -->
+
+        <nav>
+            <ul>
+                <li><a href="./index.html#accueil" class="linkNavHeader">Accueil</a></li>
+                <li><a href="" class="linkNavHeader">Photos</a></li>
+                <li><a href="./index.html#formSubscription" class="linkNavHeader">Inscription</a></li>
+                <li><a href="./index.html#accessPlan" class="linkNavHeader">Plan d'accès</a></li>
+            </ul>
+        </nav>
+
+<!-- ########## Bouton de connexion à l'espace exposant ########## -->
+<!-- ########## Lien au lieu de bouton car aucun back pour la connexion ########## -->
+
+        <div class="connexionButton">
+            <a href="./connectPage.html">Espace exposant</a>
+        </div>
+    </header>
+
+<!-- ########## Article (grid/images) ########## -->
+
+    <section id="container">
+        <div class="imgGrid">
+            <div class="topleft imgZoom">
+                <img class="imgHT" src="./public/assets/img/photo n1" alt="">
+            </div>
+            <div class="topright imgZoom">
+                <img class="imgHT" src="./public/assets/img/photo n2" alt="">
+            </div>
+            <div class="bottomleft imgZoom">
+                <img class="imgHT" src="./public/assets/img/photo n3" alt="">
+            </div> 
+            <div class="bottomright imgZoom">
+                <img class="imgHT" src="./public/assets/img/photo n4" alt="">
+            </div>
+        </div>
+
+<!-- ########## Partie description de l'article ########## -->
+
+        <div class="text">
+            <h1>Bourse aux produits High-Tech</h1>
+    
+            <h3>Les étudiants de la Manu à Amiens organisent ce samedi 06 juillet une grande bourses aux produits high-tech, pour permettre au plus grand nombre d’étudiant possible de s’équiper.</h3>
+    
+            
+            <p><a href="./index.html#accessPlan"><img class="iconsArticle" src="./public/assets/img/icon-adresse.png" alt=""></a> 70 Rue des Jacobins, 80000 Amiens</p>
+                
+            <p><a href="https://calendar.google.com/calendar/embed?src=aplrmrdf6r8lm2ldu0ataalu44%40group.calendar.google.com&ctz=Europe%2FParis" target="_blank"><img class="iconsArticle" src="./public/assets/img/icon-calendrier.png" alt=""></a> Ce Samedi 06 juillet</p>
+               
+            <p><a href="https://calendar.google.com/calendar/embed?src=aplrmrdf6r8lm2ldu0ataalu44%40group.calendar.google.com&ctz=Europe%2FParis" target="_blank"><img class="iconsArticle" src="./public/assets/img/icon-horloge.svg" alt=""></a>  Ouverture : 09h00      Fermeture : 18h00 </p>
+                
+    </section>
+
+    <section id="formSubscription">
+
+<!-- ########## Formulaire d'inscription ########## -->
+
+        <h2>Inscription exposants</h2>
+
+        <form class="container" method="POST" action="index.html">  
+
+            <label  for="lastname"></label>
+            <input placeholder="Nom" type="text" name="lastname" id="lastname" />
+
+            <label for="firstname"></label>
+            <input placeholder="Prénom" type="text" name="firstname" id="firstname" /> <br>
+
+            <label for="email"></label>
+            <input  rows="10" cols="30" placeholder="E-mail" name="email" id="email" type="email"></input> <br>
+            
+            <label for="password"></label>
+            <input placeholder="Mot de passe"  name="password" id="password" type="password" /> <br>
+
+            <label for="passwordConfirm"></label>
+            <input placeholder="Comfirmer mot de passe"  name="passwordConfirm" id="passwordConfirm" type="password" /> <br>
+
+            <label for="phone"></label>  
+            <input placeholder="Téléphone" type="tel" name="phone" id="phone" maxlength="10"/> <br>  
+            
+<!-- ########## Boutton d'envoi du formulaire ########## -->
+
+            <button type="submit" value="S'inscrire" #="submit">S'inscrire</button>
+
+        </form>    
+
+    </section>  
+
+<!-- ########## Section Informations sanitaire ########## -->
+
+    <section class="sanitInfo">
+        <div class="sanitInfoText">
+            <h2>Informations sanitaires</h2>
+
+            <p>Il est impératif de continuer à respecter scrupuleusement les gestes barrières :</p>
+            <ul>
+                <li>Lavage des mains</li>
+                <li>Éternuer et tousser dans son coude</li>
+                <li>Limiter les contacts</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- ########## Section plan d'accès grâce à un google map grâce à <iframe> ########## -->
+
+    <section id="accessPlan">
+        <h2>Plan d'accès :</h2>
+        <div class="accessPlanImg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10281.874353737981!2d2.3014757!3d49.8900054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1656066076709!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+<!-- ########## Footer avec les icones de réseaux sociaux ########## -->
+
+    <footer class="footerIndex">
+        <a href="" ><i class="fa-solid fa-envelope fa-2x"></i></a>
+        <a href="https://www.facebook.com/LaManuFormation/" target="_blank" ><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/LaManuFormation?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" ><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram.com/lamanuformation/?hl=fr" target="_blank" ><i class="fa-brands fa-instagram fa-2x"></i></a>
+    </footer>
+</body>
+</html>
