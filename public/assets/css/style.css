@@ -29,7 +29,7 @@ header {
 
 .navbar-dark .navbar-toggler {
     margin-left: -20%;
-    width: 15%;  
+    width: 10%;  
 }
 nav {
     display: flex;
@@ -62,7 +62,7 @@ li a:hover {
 
 .connexionButtonA {
     display: flex;
-    margin-right: 45%;
+    margin-right: 50%;
 }
 
 .connexionButtonA > a {
