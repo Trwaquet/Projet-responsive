@@ -11,25 +11,26 @@
 /* ############# Début header ############# */
 
 header {
-    font-family: 'Josefin';
-    display: grid;
-    align-items: center;
-    grid-template-columns: 15% 65% 5% 10% 5%;
-    grid-template-rows: 100%;
     width: 80%;
-    background-color: #11AB7C;
     margin-left: 10%;
-    height: 12vh;
+    font-family: 'Josefin';
+    background-color: #11AB7C;
+}
+
+.navbar-toggler {
+    margin-left: 70%;
 }
 
 .logo {
-    grid-area: 1 / 1 / 2 / 2;
-    padding: 10px 10px 10px 10px;
-    height: 30%;
-    width: 100%;
-    margin-left: 10%;
+    height: 5%;
+    min-width: 50%;
+    max-width: 50%;
 }
 
+.navbar-dark .navbar-toggler {
+    margin-left: -20%;
+    width: 15%;  
+}
 nav {
     display: flex;
     justify-content: flex-end;
@@ -40,7 +41,7 @@ nav ul {
     font-weight: 700;
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
 }
 
 nav li {
@@ -59,16 +60,12 @@ li a:hover {
     color: #0D88CD;
 }
 
-.connexionButton {
+.connexionButtonA {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 5;
-    height: 50%;
-    padding: -10px 60px -10px 60px;
+    margin-right: 45%;
 }
 
-.connexionButton > a {
+.connexionButtonA > a {
     text-align: center;
     font-weight: bold;
     border: solid #0D88CD;
@@ -447,7 +444,7 @@ iframe {
 
 #formConnection div {
     width: 60%;
-    height: 75%;
+    height: 80%;
     margin-left: 20%;
     background-color: #11AB7C;
     border-radius: 10px;
@@ -482,7 +479,7 @@ iframe {
     color: white;
     font-weight: bold;
     border: 2px outset #E8E8E8;
-    width: 20%;
+    width: 70%;
 }
 
 .buttonConnection:hover {
