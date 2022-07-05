@@ -9,17 +9,14 @@
 }
 
 /* ############# Début header ############# */
-
 header {
-    width: 80%;
-    margin-left: 10%;
     font-family: 'Josefin';
     background-color: #11AB7C;
 }
 
 .navbar-dark .navbar-toggler {
     margin-left: -20%;
-    width: 10%;  
+    width: 10%;
 }
 
 .modal-footer {
@@ -31,110 +28,71 @@ header {
     width: 45%;
 }
 
+header img {
+    width: 50%;
+}
+
+.modal input {
+    width: 100%;
+    margin-bottom: 10px;
+}
 /* ############# Fin header ############# */
 
+
+
+
+
+
 /* ############# Début article ############# */
-
-#container {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 100%;
-    width: 80%;
-    height: 600px;
-    margin-left: 10%;
-}
-
-.topleft {
-    grid-area: 1/1/3/2;
-    height: 100%;
-    width: 100%;
-}
-
-.topright {
-    grid-area: 1/2/2/3;
-    height: 100%;
-    width: 100%;
-}
-
-.bottomleft {
-    grid-area: 3/1/4/2;
-    height: 100%;
-    width: 100%;
-}
-
-.bottomright {
-    grid-area: 2/2/4/3;
-    height: 100%;
-    width: 100%;
-}
-
-.text {
+.blocText {
     font-family: "Josefin";
-    grid-area: 1/2/2/3;
-    width: 100%;
-    height: 100%;
     background-color: #E8E8E8;
-    text-align: center;
+    /* text-align: center; */
+    font-size: 150%;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-}
-
-.text p, h3 {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: -5%;
-    text-align: justify;
-    font-weight: 400;
-}
-
-.imgGrid {
-    width: 90%;
-    height: 84%;
-    grid-area: 1/1/2/2;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 45% 10% 45%;
-    row-gap: 3%;
-    column-gap: 2%;
-    margin: 3%;
-}
-
-.imgHT {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
 }
 
 .imgZoom:hover img{
     transform: scale(0.95);
-}
-
-.iconsArticle {
-    width: 50px;
-    height: 50px;
-    margin-right: 25px;
+    transition-duration: 0.5s;
 }
 
 .iconsArticle:hover {
     transform: scale(1.1);
 }
 
+.iconsArticle {
+    width: 10%;
+    height: auto;
+    margin-right: 25px;
+}
 /* ############# Fin article ############# */
 
-/* ############# Début formulaire ############# */
 
-#formSubscription{   
+
+
+
+
+
+
+/* ############# Début formulaire ############# */
+#formSubscription {   
     font-family: "Josefin";
-    width: 80%;
     text-align: center;
-    margin-left: 10%;
-    height: 80%;
     background-color: #11AB7C;
 }
 
-input{
+.formWidth {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: rgba(232, 232, 232, 1);
+    border-radius: 150px;
+    border: 0 none;
+}
+
+input {
     font-family: "Josefin";
     text-align: center;
     font-size: 25px;
@@ -145,85 +103,10 @@ input::placeholder{
     font-size: 20px;
 }
 
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    width: 80%;
-    justify-content: center;
-}    
-
-#formSubscription h2{
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 3%;
-    color:white;
-    font-size: 200%;
-}
-
-#lastname{
-    width: 49%;
-    height: 80px;
-    border-radius: 150px;
-    background-color: rgba(232, 232, 232, 1);
-    margin-bottom: 2%;
-    margin-top: 2%;
-    margin-right: 2%;
-    border: 0 none;
-}
-    
-#firstname{
-    width: 49%;
-    height: 80px;
-    border-radius: 150px;
-    background-color: rgba(232, 232, 232, 1);
-    margin-top: 2%;    
-    border: 0 none;
-}
-
-
-#password{
-    width: 49%;
-    height: 80px;
-    border-radius: 150px;
-    background-color: rgba(232, 232, 232, 1);
-    margin-bottom: 2%;
-    border: 0 none;
-    margin-right: 2%;
-}
-
-#passwordConfirm {
-    width: 49%;
-    height: 80px;
-    border-radius: 150px;
-    background-color: rgba(232, 232, 232, 1);
-    margin-bottom: 2%;
-    border: 0 none;
-}
-
-#email{
-    width: 100%;
-    height: 80px;
-    border-radius: 150px;
-    background-color: rgba(232, 232, 232, 1);
-    margin-bottom: 2%;
-    border: 0 none;
-}
-
-#phone{
-    width: 100%;
-    height: 80px;
-    border-radius: 150px;
-    background-color: rgba(232, 232, 232, 1);
-    margin-bottom: 5%;
-    border: 0 none;
-}
-
 button{
     font-family: "Josefin";
     width: 30%;
-    height: 80px;
+    height: 50px;
     border-radius: 70px;
     background: #0D88CD;
     color: white;
@@ -237,108 +120,62 @@ button{
 button:hover {
     border: 2px outset #0D88CD;
 }
-
 /* ############# Fin formulaire ############# */
 
-/* ############# Début info sanitaire ############# */
 
+
+
+
+
+
+
+
+
+/* ############# Début info sanitaire ############# */
 .sanitInfo {
     font-family: "Josefin";
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 400px;
-    margin-left: 10%;
     background-color: #E8E8E8;
 }
 
-.sanitInfoText {
+.sanitFlex {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    width: 80%;
-    height: 80%;
 }
-
-.sanitInfoText > p, ul {
-    font-size: 25px;
-}
-
-.sanitInfoText > ul {   
-    margin-left: -10%;
-}
-
-.sanitInfoText li {
-    list-style-type: circle;
-}
-
-.sanitInfoText h2 {
-    color: black;
-    font-size: 200%;
-}
-
 /* ############# Fin info sanitaire ############# */
 
-/* ############# Début plan d'accès ############# */
 
+
+
+
+
+
+
+
+
+
+
+/* ############# Début plan d'accès ############# */
 #accessPlan {
     font-family: "Josefin";
-    width: 80%;
-    height: 800px;
-    margin-left: 10%;
     background-color: #11AB7C;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
-
-#accessPlan h2 {
-    margin-top: 2%;
-    font-size: 200%;
-    color: white;
-}
-
-.accessPlanImg {
-    width: 80%;
-    height: 70%;
-    margin-bottom: 5%;
-}
-
-iframe {
-    width: 80%;
-    height: 100%;
-    margin-left: 10%;
-    border-radius: 10px;
-}
-.accessPlanImg > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
 /* ############# Fin plan d'acces ############# */
 
+
+
+
+
+
+
+
+
+
 /* ############# Début footer ############# */
-
-.footerIndex {
-    width: 80%;
-    height: 12vh;
-    margin-left: 10%;
-    background-color: #E8E8E8;
+.flexCenter {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.fa-envelope, .fa-facebook, .fa-twitter, .fa-instagram {
-    margin-right: 5%;
-    margin-left: 50px;
-    margin-right: 50px;
-    color: black;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .fa-facebook:hover {
@@ -359,88 +196,12 @@ iframe {
 .fa-envelope:hover{
     color: #D93025;
     transform: scale(1.3);
+} 
+.fa-envelope, .fa-facebook, .fa-twitter, .fa-instagram {
+    color: black;
 }
 
-/* ############# Fin footer ############# */
-
-/* ############# Début page de connexion ############# */
-
-.main {
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-#formConnection {
-    font-family: "Josefin";
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    height: 76vh;
-    display: flex;
-    align-items: center;
-}
-
-.formConnectPage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    align-items: center;
-}
-
-#formConnection div {
-    width: 60%;
-    height: 80%;
-    margin-left: 20%;
-    background-color: #11AB7C;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#formConnection h2{
-    text-align: center;
-    padding-top: 3;
-    padding-bottom: 7%;
-    color:white;
-    font-size: 25px;
-}
-
-#passwordConnect {
-    width: 100%;
-    height: 80px;
-    border-radius: 150px;
-    background-color: rgba(232, 232, 232, 1);
-    margin-bottom: 2%;
-    border: 0 none;
-}
-
-.buttonConnection {
-    padding: 20px 50px 20px 50px;
-    border-radius: 100px;
-    border: solid rgba(13, 136, 205, 1);
-    background-color: rgba(13, 136, 205, 1);
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    border: 2px outset #E8E8E8;
-    width: 70%;
-}
-
-.buttonConnection:hover {
-    border: 2px outset #0D88CD;
-}
-
-.footerConnection {
-    width: 80%;
-    height: 12vh;
-    margin-left: 10%;
+footer {
     background-color: #E8E8E8;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
+/* ############# Fin footer ############# */

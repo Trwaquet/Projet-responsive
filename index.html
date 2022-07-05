@@ -12,119 +12,169 @@
 </head>
 <body>
     <header>
-        <!-- ########## Barre de navigation ########## -->
-        <!-- ########## Image du logo en blanc au format .svg ########## -->
-        <!-- ########## Bouton de connexion à l'espace exposant ########## -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./public/assets/img/LaManuUltraCompact_RVB_white.svg" alt="Logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#acceuil">Accueil</a>
-                    <a class="nav-link" href="#info">Photos</a>
-                    <a class="nav-link" href="#formSubscription">inscription</a>
-                    <a class="nav-link" href="#accessPlan">Plan D'accès</a>
-                    <button type="button" class="btn btn-primary buttonLogin" data-bs-toggle="modal" data-bs-target="#login">
-                    Espace Personel
-                    </button>
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./public/assets/img/LaManuUltraCompact_RVB_white.svg" alt="Logo" class="logo img-responsive"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="#acceuil">Accueil</a>
+                        <a class="nav-link" href="#info">Photos</a>
+                        <a class="nav-link" href="#formSubscription">inscription</a>
+                        <a class="nav-link" href="#accessPlan">Plan D'accès</a>
+                        <button type="button" class="btn btn-primary buttonLogin" data-bs-toggle="modal" data-bs-target="#login">
+                        Espace Personel
+                        </button>
+                        </div>
                 </div>
-              </div>
             </div>
         </nav>
     </header>
 
 <!-- ########## Article (grid/images) ########## -->
-    <section id="container">
-        <div class="imgGrid">
-            <div class="topleft imgZoom">
-                <img class="imgHT" src="./public/assets/img/photo n1" alt="">
-            </div>
-            <div class="topright imgZoom">
-                <img class="imgHT" src="./public/assets/img/photo n2" alt="">
-            </div>
-            <div class="bottomleft imgZoom">
-                <img class="imgHT" src="./public/assets/img/photo n3" alt="">
-            </div> 
-            <div class="bottomright imgZoom">
-                <img class="imgHT" src="./public/assets/img/photo n4" alt="">
-            </div>
-        </div>
-
-<!-- ########## Partie description de l'article ########## -->
-        <div class="text">
-            <h1>Bourse aux produits High-Tech</h1>
-    
-            <h3>Les étudiants de la Manu à Amiens organisent ce samedi 06 juillet une grande bourses aux produits high-tech, pour permettre au plus grand nombre d’étudiant possible de s’équiper.</h3>
-    
-            
-            <p><a href="./index.html#accessPlan"><img class="iconsArticle" src="./public/assets/img/icon-adresse.png" alt=""></a> 70 Rue des Jacobins, 80000 Amiens</p>
+    <section id="info">
+        <div class="container mt-3">
+            <div class="row">
                 
-            <p><a href="https://calendar.google.com/calendar/embed?src=aplrmrdf6r8lm2ldu0ataalu44%40group.calendar.google.com&ctz=Europe%2FParis" target="_blank"><img class="iconsArticle" src="./public/assets/img/icon-calendrier.png" alt=""></a> Ce Samedi 06 juillet</p>
+                    <!-- ########## Partie description de l'article ########## -->
+                <div class="col-12 col-md-5 order-md-1 blocText mb-3">
+                    <h1 class="text-center text-md-start">Bourse aux produits High-Tech</h1>
+                        
+                    <p class="">Les étudiants de la Manu à Amiens organisent ce samedi 06 juillet une grande bourses aux produits high-tech, pour permettre au plus grand nombre d’étudiant possible de s’équiper.</p>
+                        
+                        
+                    <a href="./index.html#accessPlan" class="text-decoration-none text-black"><p><img class="iconsArticle" src="./public/assets/img/icon-adresse.png" alt=""> 70 Rue des Jacobins, 80000 Amiens</p></a>
+                        
+                    <a href="https://calendar.google.com/calendar/embed?src=aplrmrdf6r8lm2ldu0ataalu44%40group.calendar.google.com&ctz=Europe%2FParis" class="text-decoration-none text-black" target="_blank"><p><img class="iconsArticle" src="./public/assets/img/icon-calendrier.png" alt=""> Ce Samedi 06 juillet</p></a>
 
-            <p><a href="https://calendar.google.com/calendar/embed?src=aplrmrdf6r8lm2ldu0ataalu44%40group.calendar.google.com&ctz=Europe%2FParis" target="_blank"><img class="iconsArticle" src="./public/assets/img/icon-horloge.svg" alt=""></a>  Ouverture : 09h00      Fermeture : 18h00 </p>
+                    <a href="https://calendar.google.com/calendar/embed?src=aplrmrdf6r8lm2ldu0ataalu44%40group.calendar.google.com&ctz=Europe%2FParis" class="text-decoration-none text-black" target="_blank"><p><img class="iconsArticle" src="./public/assets/img/icon-horloge.svg" alt=""> Horaires : 09h00 - 18h00 </p></a>
+                </div>
+
+                <div class="col-12 col-md-7 order-md-0">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+
+                                <img class="img-fluid mb-3 h-md-50 rounded" src="https://gcdnb.pbrd.co/images/UhpdoF1kxrod.png?o=1" alt="">
+
+
+                                <img class="img-fluid mb-3 rounded" src="https://gcdnb.pbrd.co/images/3LSn4mi1ybKU.png?o=1" alt="">
+
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+
+                                <img class="img-fluid mb-3 rounded" src="https://gcdnb.pbrd.co/images/fvYo85614R3w.png?o=1" alt="">
+
+
+                                <img class="img-fluid mb-3 rounded d-none d-md-block" src="https://gcdnb.pbrd.co/images/qiCtXS0CTZPc.png?o=1" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ########## Formulaire d'inscription ########## -->
+<!-- ########## Formulaire ########## -->
     <section id="formSubscription">
-        <h2>Inscription exposants</h2>
+        <div class="container formBox">
+            <div class="row text-center">
+                <div class="col-12 mt-5 mb-5 text-white">
+                    <h2>Inscription exposants</h2>
+                </div>
 
-        <form class="container" method="POST" action="index.html">  
+                <div class="col-12 col-md-6">
+                    <input type="text" placeholder="Nom" name="lastname" id="lastname" class="formWidth mb-4">
+                </div>
 
-            <label  for="lastname"></label>
-            <input placeholder="Nom" type="text" name="lastname" id="lastname" />
+                <div class="col-12 col-md-6">
+                    <input type="text" placeholder="Prénom" name="name" id="name" class="formWidth mb-4">
+                </div>
 
-            <label for="firstname"></label>
-            <input placeholder="Prénom" type="text" name="firstname" id="firstname" /> <br>
+                <div class="col-12">
+                    <input type="text" placeholder="E-mail" name="email" id="email" class="formWidth mb-4">
+                </div>
 
-            <label for="email"></label>
-            <input  rows="10" cols="30" placeholder="E-mail" name="email" id="email" type="email"></input> <br>
-            
-            <label for="password"></label>
-            <input placeholder="Mot de passe"  name="password" id="password" type="password" /> <br>
+                <div class="col-12 col-md-6">
+                    <input type="text" placeholder="Mot de passe" name="password" id="password" class="formWidth mb-4">
+                </div>
 
-            <label for="passwordConfirm"></label>
-            <input placeholder="Comfirmer mot de passe"  name="passwordConfirm" id="passwordConfirm" type="password" /> <br>
+                <div class="col-12 col-md-6">
+                    <input type="text" placeholder="Confirmer mot de passe" name="confirmPassword" id="confirmPassword" class="formWidth mb-4">
+                </div>
 
-            <label for="phone"></label>  
-            <input placeholder="Téléphone" type="tel" name="phone" id="phone" maxlength="10"/> <br>  
-            
-<!-- ########## Boutton d'envoi du formulaire ########## -->
-            <button type="submit" value="S'inscrire" #="submit">S'inscrire</button>
-        </form>    
-    </section>  
+                <div class="col-12">
+                    <input type="text" placeholder="Téléphone" name="phone" id="phone" class="formWidth mb-4">
+                </div>
+
+                <div class="col-12 mt-4 mb-4">
+                    <button type="submit" value="S'inscrire" #="submit">S'inscrire</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 <!-- ########## Section Informations sanitaire ########## -->
     <section class="sanitInfo">
-        <div class="sanitInfoText">
-            <h2>Informations sanitaires</h2>
-
-            <p>Il est impératif de continuer à respecter scrupuleusement les gestes barrières :</p>
-            <ul>
-                <li>Lavage des mains</li>
-                <li>Éternuer et tousser dans son coude</li>
-                <li>Limiter les contacts</li>
-            </ul>
+        <div class="row">
+            <div class="col sanitFlex fs-4">
+                <h2 class="mb-5 mt-5">Informations sanitaires</h2>
+                <p class="">Il est impératif de continuer à respecter scrupuleusement les gestes barrières :</p>
+                <ul class="mb-5">
+                    <li>Lavage des mains</li>
+                    <li>Éternuer et tousser dans son coude</li>
+                    <li>Limiter les contacts</li>
+                </ul>
+            </div>
         </div>
     </section>
 
 <!-- ########## Section plan d'accès grâce à un google map grâce à <iframe> ########## -->
     <section id="accessPlan">
-        <h2>Plan d'accès :</h2>
-        <div class="accessPlanImg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10281.874353737981!2d2.3014757!3d49.8900054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1656066076709!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-white mt-5 mb-5 text-center">Plan d'accès :</h2>
+                
+                <div class="row">
+                    <div class="col-12 mb-5">
+                            <a class="d-md-none" href=""><img src="./public/assets/img/screen-google-maps.png" alt="" class="img-fluid"></a>
+                            <iframe class="d-none d-md-block w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10281.874353737981!2d2.3014757!3d49.8900054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37fb21b742d12b66!2sLa%20Manu%20-%20Ecole%20sup%C3%A9rieure%20des%20m%C3%A9tiers%20du%20num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1656066076709!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>   
+                </div>
+                
+                </div>    
+                
+            </div>
         </div>
     </section>
 
 <!-- ########## Footer avec les icones de réseaux sociaux ########## -->
-    <footer class="footerIndex">
-        <a href="" ><i class="fa-solid fa-envelope fa-2x"></i></a>
-        <a href="https://www.facebook.com/LaManuFormation/" target="_blank" ><i class="fa-brands fa-facebook fa-2x"></i></a>
-        <a href="https://twitter.com/LaManuFormation?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" ><i class="fa-brands fa-twitter fa-2x"></i></a>
-        <a href="https://www.instagram.com/lamanuformation/?hl=fr" target="_blank" ><i class="fa-brands fa-instagram fa-2x"></i></a>
+    <footer>
+        <div class="container p-2 pt-2 pb-2 p-md-5 pt-md-4 pb-md-4">
+            <div class="row mb-3 mb-md-4">
+                <div class="col flexCenter">
+                    <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
+                </div>
+                <div class="col flexCenter">
+                    <a href="https://www.facebook.com/LaManuFormation/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                </div>
+                <div class="col flexCenter">
+                    <a href="https://twitter.com/LaManuFormation?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                </div>
+                <div class="col flexCenter">
+                    <a href="https://www.instagram.com/lamanuformation/?hl=fr" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-6"><a class="text-black text-decoration-none" href="" target="_blank">Mention Légale</a></div>
+                <div class="col-6"><a class="text-black text-decoration-none" href="" target="_blank">Conditions Générales</a></div>
+            </div>
+        </div>
     </footer>
     <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -134,16 +184,16 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <input type="text" placeholder="E-mail" name="email" id="email" class="inputSize">
-                <input type="password" placeholder="Mot de passe" name="password" id="password" class="inputSize">
+                <input type="text" placeholder="E-mail" name="email" id="email" class="inputSize" required>
+                <input type="password" placeholder="Mot de passe" name="password" id="password" class="inputSize" required>
             </div>
             <div class="modal-footer justify-content-center">
               <button type="button" class="btn btn-secondary">Inscription</button>
-              <button type="button" class="btn btn-primary">Se connecter</button>
+              <button type="submit" class="btn btn-primary">Se connecter</button>
             </div>
           </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
