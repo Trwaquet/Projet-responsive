@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* ############# Début header ############# */
 header {
     font-family: 'Josefin';
